@@ -70,5 +70,5 @@ XInputまたはDirectInput対応のゲームパッド（ゲームコントロー
 |Analog R|アナログスティックR|[GetGamepadAnalogStickRX](https://vrmcloud.net/nx/script/script/system/GetGamepadAnalogStickRX.html)、<br />[GetGamepadAnalogStickRY](https://vrmcloud.net/nx/script/script/system/GetGamepadAnalogStickRY.html)|
 
 ### ゲームパッド標準操作制限
-「入力制限」にチェックを入れると「[GetGamepadButtonEnable](https://vrmcloud.net/nx/script/script/system/GetGamepadButtonEnable.html)」命令になりVRMNX標準のゲームパッド操作が無効になります。  
+「入力制限」にチェックを入れると「[SetGamepadButtonEnable](https://vrmcloud.net/nx/script/script/system/SetGamepadButtonEnable.html)」命令によりVRMNX標準のゲームパッド操作が無効になります。  
 チェックを外すと有効化します。  
