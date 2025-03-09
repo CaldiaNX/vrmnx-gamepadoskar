@@ -42,17 +42,17 @@ import ゲームパッド押すかーくん Ver.x.x
 初期表示状態を変える場合は「_drawEnable」のTrue/Falseを変更して下さい。  
 
 ### ゲームパッド認識
-XInputまたはDirectInput対応のゲームパッド（ゲームコントローラ）を最大4個までのゲームパッドが認識可能です。  
-識別は「[IsGamepadConnected](https://vrmcloud.net/nx/script/script/system/IsGamepadConnected.html)」を毎フレーム実行しています。  
+XInputまたはDirectInput対応のゲームパッド（ゲームコントローラ）を最大4個まで認識可能です。  
+認識には「[IsGamepadConnected](https://vrmcloud.net/nx/script/script/system/IsGamepadConnected.html)」を毎フレーム実行しています。  
 ※認識にVRMNXの再起動が必要となるコントローラがあります。  
 
 ### ゲームパッド入力認識
-ゲームパッドが認識されるとボタンの押下やアナログスティックの傾きを検出してチェックボックスとスライドバーが動きます。  
-アナログスティックの値範囲はXInputに準じて「-32768～32767」になります。  
+ゲームパッドが認識されるとボタンの押下やアナログスティックの傾きを検出してチェックボックスとスライドバーが反応します。  
+アナログスティックの値範囲はXInputに準じて「-32768～32767」となります。  
 ※チェックボックスやスライドバーを触ってもボタン操作は代替されません。  
 
-ボタンと識別名は以下の通りです。  
-|名称|ゲームパッド|命令|
+入力内容とVRMNXの命令は以下の通りです。  
+|名称|ゲームパッド入力|VRMNX命令|
 |----|----|----|
 |←|←ボタン|[GetGamepadLEFT](https://vrmcloud.net/nx/script/script/system/GetGamepadLEFT.html)|
 |↑|←ボタン|[GetGamepadUP](https://vrmcloud.net/nx/script/script/system/GetGamepadUP.html)|
